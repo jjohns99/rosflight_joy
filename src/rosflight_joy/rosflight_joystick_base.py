@@ -37,7 +37,7 @@ class rosflight_joystick_base():
 
         self.next_update_time = time.time()
 
-        if 'Taranis' in self.joy.get_name():
+        if 'Taranis' in self.joy.get_name() or 'FrSky' in self.joy.get_name():
             print("found Taranis")
             self.mapping['x'] = 0
             self.mapping['y'] = 1
